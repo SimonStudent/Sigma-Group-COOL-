@@ -13,16 +13,6 @@ body {
     font-size: 16px;
 }
 
-#cta{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-#abc{
-    display: flex;
-}
-
 h1, h2 {
     color: #fff;
 }
@@ -40,26 +30,51 @@ main {
     margin-top: 30px;
 }
 
+#abc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
 #sammanfattning {
     background: #444; 
     padding: 30px;
-    max-width: 50%;
-    margin: 30px auto;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     line-height: 1.8;
+    text-align: left;
+    flex: 1;
+    max-width: 50%;
 }
 
-#sammanfattning h2 {
-    font-size: 28px;
+#sammanfattning h2{
+    font-size: 24px;
     margin-bottom: 20px;
     color: #fff; 
 }
 
-#sammanfattning p {
+#sammanfattning p{
     font-size: 18px;
     color: #ddd;
     margin-bottom: 15px;
+}
+
+#cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#cta-bild{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cta-btn {
@@ -79,13 +94,66 @@ main {
     background-color: #666; 
 }
 
+#om-oss {
+    display: flex;
+    flex-direction: row; /* Bild och text ligger i rad */
+    align-items: center; /* Centrera vertikalt */
+    justify-content: space-between; /* Separerar bild och text */
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+#om-oss-bild {
+    flex: 1; /* Låt bilden ta 40% av bredden */
+    display: flex;
+    justify-content: center; /* Centrera bilden horisontellt */
+}
+
+#om-oss-bild img {
+    width: 100%;
+    max-width: 400px; /* Sätt en maxbredd */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#om-oss-text {
+    flex: 2; /* Låt texten ta 60% av bredden */
+    background: #444; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    text-align: left;
+    max-width: 55%;
+}
+
+/* Responsiv design för mobil */
+@media screen and (max-width: 768px) {
+    #om-oss {
+        flex-direction: column; /* Stapla bild och text */
+        text-align: center;
+    }
+
+    #om-oss-text {
+        max-width: 90%;
+    }
+}
+
+
+/* Responsiv design */
 @media screen and (max-width: 768px) {
     header {
         font-size: 28px;
     }
 
-    #sammanfattning {
-        padding: 20px;
+    #abc, #om-oss {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sammanfattning, #om-oss-text {
         max-width: 90%;
     }
 
