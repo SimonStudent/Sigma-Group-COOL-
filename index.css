@@ -13,6 +13,84 @@ body {
     font-size: 16px;
 }
 
+#kontakt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #3b3e51; /* Mörkare gråblå bakgrund */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#kontakt-form h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#kontakt-form input, 
+#kontakt-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2b2d42;
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form input:focus, 
+#kontakt-form textarea:focus {
+    background: #383b54;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#kontakt-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+#kontakt-div{
+    
+}
+
+#kontakt-form button {
+    width: 100%;
+    background: #FF9900; 
+    color: black;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form button:hover {
+    background: #17a447;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    #kontakt-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #kontakt-form input,
+    #kontakt-form textarea {
+        width: 100%;
+    }
+}
+
+
 h1, h2 {
     color: #fff;
 }
