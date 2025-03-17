@@ -21,7 +21,7 @@ body {
     max-width: 500px;
     margin: 40px auto;
     padding: 25px;
-    background: #3b3e51; /* Mörkare gråblå bakgrund */
+    background: #3b3e51;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -56,14 +56,104 @@ body {
     height: 100px;
 }
 
-#kontakt-div{
-    
+#kontakt-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Kontaktformulär */
+#kontakt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: 400px;
+    background: #3b3e51;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#kontakt-form label {
+    font-size: 16px;
+    color: #ddd;
+    font-weight: bold;
+}
+
+#kontakt-form input,
+#kontakt-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2b2d42;
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form input:focus,
+#kontakt-form textarea:focus {
+    background: #383b54;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#kontakt-form textarea {
+    resize: none;
+    height: 120px;
 }
 
 #kontakt-form button {
     width: 100%;
+    background: #1db954;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form button:hover {
+    background: #17a447;
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 400px;
+    height: 350px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    #kontakt-div {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #kontakt-form,
+    iframe {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+#kontakt-form button {
+    width: 100%;
     background: #FF9900; 
-    color: black;
+    color: white;
     padding: 14px;
     border: none;
     border-radius: 6px;
@@ -239,4 +329,125 @@ main {
         font-size: 16px;
         padding: 12px 25px;
     }
+}
+
+footer {
+    background: #1a1a1a;
+    color: #e0e0e0;
+    padding: 50px 20px;
+    font-size: 16px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #FF9900;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section p, 
+.footer-section ul {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FF9900;
+}
+
+.footer-section.social {
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;  
+    align-items: center;  
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;  
+    font-size: 36px;  
+}
+
+.social-icons a i {
+    color: inherit;  
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: inherit;  
+}
+
+.social-icons a.instagram i {
+    background: linear-gradient(45deg, #E1306C, #F56040, #F8A51A);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 36px;
+}
+
+.instagram-logo {
+    background: linear-gradient(45deg, #F58529, #F77737, #FCAF45, #FFDC80, #F56040, #E1306C);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.social-icons a.facebook i {
+    color: #1877F2 !important;  
+}
+
+
+@media screen and (max-width: 768px) {
+    .social-icons {
+        font-size: 28px;  
+        gap: 15px;  
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
 }
