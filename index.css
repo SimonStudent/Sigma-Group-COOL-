@@ -5,6 +5,32 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #222; 
+    text-align: center;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+#padel {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#city {
+    color: #FF9800;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
 body {
     background-color: #2c2f38;
     color: #e0e0e0; 
@@ -12,174 +38,6 @@ body {
     padding: 20px;
     font-size: 16px;
 }
-
-#kontakt-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 25px;
-    background: #3b3e51;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-#kontakt-form h2 {
-    color: #fff;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-#kontakt-form input, 
-#kontakt-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    background: #2b2d42;
-    color: #e0e0e0;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-}
-
-#kontakt-form input:focus, 
-#kontakt-form textarea:focus {
-    background: #383b54;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-}
-
-#kontakt-form textarea {
-    resize: none;
-    height: 100px;
-}
-
-#kontakt-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    padding: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Kontaktformulär */
-#kontakt-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 20px;
-    width: 400px;
-    background: #3b3e51;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-#kontakt-form label {
-    font-size: 16px;
-    color: #ddd;
-    font-weight: bold;
-}
-
-#kontakt-form input,
-#kontakt-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    background: #2b2d42;
-    color: #e0e0e0;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-}
-
-#kontakt-form input:focus,
-#kontakt-form textarea:focus {
-    background: #383b54;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-}
-
-#kontakt-form textarea {
-    resize: none;
-    height: 120px;
-}
-
-#kontakt-form button {
-    width: 100%;
-    background: #FF9900;
-    color: white;
-    padding: 14px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-#kontakt-form button:hover {
-    background: #17a447;
-    transform: scale(1.05);
-}
-
-iframe {
-    width: 400px;
-    height: 350px;
-    border-radius: 12px;
-    border: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 768px) {
-    #kontakt-div {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    #kontakt-form,
-    iframe {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-
-
-#kontakt-form button {
-    width: 100%;
-    background: #FF9900; 
-    color: white;
-    padding: 14px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-#kontakt-form button:hover {
-    background: #17a447;
-    transform: scale(1.05);
-}
-
-@media screen and (max-width: 600px) {
-    #kontakt-form {
-        width: 90%;
-        padding: 20px;
-    }
-
-    #kontakt-form input,
-    #kontakt-form textarea {
-        width: 100%;
-    }
-}
-
 
 h1, h2 {
     color: #fff;
@@ -264,9 +122,9 @@ main {
 
 #om-oss {
     display: flex;
-    flex-direction: row; /* Bild och text ligger i rad */
-    align-items: center; /* Centrera vertikalt */
-    justify-content: space-between; /* Separerar bild och text */
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
     gap: 20px;
     padding: 30px;
     max-width: 1200px;
@@ -274,20 +132,20 @@ main {
 }
 
 #om-oss-bild {
-    flex: 1; /* Låt bilden ta 40% av bredden */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centrera bilden horisontellt */
+    justify-content: center; 
 }
 
 #om-oss-bild img {
     width: 100%;
-    max-width: 400px; /* Sätt en maxbredd */
+    max-width: 400px; 
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #om-oss-text {
-    flex: 2; /* Låt texten ta 60% av bredden */
+    flex: 2; 
     background: #444; 
     padding: 30px;
     border-radius: 10px;
@@ -297,10 +155,186 @@ main {
     max-width: 55%;
 }
 
-/* Responsiv design för mobil */
+#produkterTjänster-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+#produkterTjänster-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: #FF9900; 
+}
+
+#produkterTjänster {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px;
+    padding: 30px;
+}
+
+#produkterTjänster-text, 
+#produkterTjänster-bild {
+    flex: 1;
+    background: #444; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    text-align: left;
+}
+
+#produkterTjänster-text a {
+    color: #FF9900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#produkterTjänster-text a:hover {
+    text-decoration: underline;
+}
+
+#kontakt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #3b3e51;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#kontakt-form h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#kontakt-form input, 
+#kontakt-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2b2d42;
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form input:focus, 
+#kontakt-form textarea:focus {
+    background: #383b54;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#kontakt-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+#kontakt-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#kontakt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: 400px;
+    background: #3b3e51;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#kontakt-form label {
+    font-size: 16px;
+    color: #ddd;
+    font-weight: bold;
+}
+
+#kontakt-form input,
+#kontakt-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2b2d42;
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form input:focus,
+#kontakt-form textarea:focus {
+    background: #383b54;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#kontakt-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+#kontakt-form button {
+    width: 100%;
+    background: #FF9900;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontakt-form button:hover {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 400px;
+    height: 350px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    #produkterTjänster {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #produkterTjänster-text, 
+    #produkterTjänster-bild {
+        max-width: 90%;
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #om-oss {
-        flex-direction: column; /* Stapla bild och text */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -309,8 +343,6 @@ main {
     }
 }
 
-
-/* Responsiv design */
 @media screen and (max-width: 768px) {
     header {
         font-size: 28px;
@@ -390,13 +422,13 @@ footer {
 .footer-section.social {
     display: flex;
     flex-direction: column;  
-    gap: 20px;  
+    gap: 50px;  
     align-items: center;  
 }
 
 .social-icons {
     display: flex;
-    gap: 20px;  
+    gap: 15px;  
     font-size: 36px;  
 }
 
@@ -407,11 +439,10 @@ footer {
 
 .social-icons a:hover {
     transform: scale(1.1);
-    color: inherit;  
 }
 
 .social-icons a.instagram i {
-    background: linear-gradient(45deg, #E1306C, #F56040, #F8A51A);
+    background: linear-gradient(135deg, #6228d7, #ee2a7b, #f9ce34);
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
@@ -419,16 +450,12 @@ footer {
 }
 
 .instagram-logo {
-    background: linear-gradient(45deg, #F58529, #F77737, #FCAF45, #FFDC80, #F56040, #E1306C);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 30px;
-    text-align: center;
+    display: inline-block;
+    width: 50%px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -450,4 +477,31 @@ footer {
     padding-top: 20px;
     font-size: 14px;
     border-top: 1px solid #333;
+}
+
+#kontakt-info {
+    background: #444; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+#kontakt-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#kontakt-info a {
+    color: #FF9900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kontakt-info a:hover {
+    text-decoration: underline;
 }
