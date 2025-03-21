@@ -1,19 +1,17 @@
-document.getElementById("kontakt-form").addEventListener("submit", async function(event) {
-    event.preventDefault(); 
+// Lägg till en eventlyssnare för formulärets skickande
+document.getElementById("kontakt-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Förhindrar att sidan laddas om när formuläret skickas
 
+    // Hämta formulärdata
     const formData = new FormData(this);
 
-    try {
-        const response = await fetch("skicka_mail.js", {
-            method: "POST",
-            body: formData
+    // Använd EmailJS för att skicka formulärdata
+    emailjs.sendForm('service_zkp9ykf', 'template_xyfas1m', formData)
+        .then(function(response) {
+            console.log('SUCCESS', response);
+            alert('Meddelandet har skickats!');
+        }, function(error) {
+            console.log('FAILED', error);
+            alert('Något gick fel, försök igen.');
         });
-
-        const result = await response.text();
-        alert(result); 
-
-    } catch (error) {
-        console.error("Ett fel uppstod:", error);
-        alert("Något gick fel. Försök igen senare.");
-    }
 });
