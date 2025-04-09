@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PADELCITY 1809</title>
     <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("45x89A9eAilD5HBze");
-        })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+
+        
+
 </head>
 <body>
     <header>
@@ -32,14 +30,14 @@
         </div>
 
         <div id="cta">
-            <img id="cta-bild" src="padelbreh.png">
+            <img id="cta-bild" src="padelbreh.png" alt="Kvinnlig padelspelare som förbereder sig att slå en backhand">
             <a href="https://www.padelcity1809.se/" target="_blank" class="cta-btn">Bli medlem</a>
         </div>
     </div>
 
     <div id="om-oss">
     <div id="om-oss-bild">
-    <img src="padel+bollbreh.webp">
+    <img src="padel+bollbreh.webp" alt="Kvinnlig padelspelare som ska slå boll med backhand">
     </div>
     <div id="om-oss-text">
         <h4> 
@@ -98,18 +96,19 @@
             <p>E-post: <a href="mailto:info@padelcity1809.se">info@padelcity1809.se</a></p>
         </div>
         <div id="kontakt-div">
-            <form id="kontakt-form" action="skicka_mail.js" method="POST">
+            <form id="kontakt-form">
                 <label for="namn">Namn:</label>
                 <input type="text" id="namn" name="namn" placeholder="Ditt namn" required>
-    
+            
                 <label for="email">E-post:</label>
                 <input type="email" id="email" name="email" placeholder="Din e-post" required>
-    
+            
                 <label for="meddelande">Meddelande:</label>
                 <textarea id="meddelande" name="meddelande" rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
-    
+            
                 <button type="submit">Skicka meddelande</button>
-             </form>
+            </form>
+            
     
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2130.1997015677653!2d12.929857176418732!3d57.73005083799379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465aa7962d268a61%3A0x977618496629e104!2sPadelcity%201809%20Bor%C3%A5s!5e0!3m2!1ssv!2sse!4v1741941095444!5m2!1ssv!2sse" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
@@ -124,13 +123,12 @@
             <div class="footer-section links">
                 <h3>Snabblänkar</h3>
                 <ul>
-                    <li><a href="#">Hem</a></li>
-                    <li><a href="#">Om oss</a></li>
-                    <li><a href="#">Boka bana</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="https://www.padelcity1809.se/om-oss/" target="_blank" >Om oss</a></li>
+                    <li><a href="https://www.matchi.se/facilities/padelcity1809" target="_blank" >Boka bana</a></li>
+                    <li><a href="https://www.padelcity1809.se/kontakt/" target="_blank" >Kontakt</a></li>
                 </ul>
             </div>
-    
+    l
             <div class="footer-section social">
                 <h3>Följ oss</h3>
                 <div class="social-icons">
@@ -151,5 +149,6 @@
         </div>
         <script src="https://kit.fontawesome.com/c758e95733.js" crossorigin="anonymous"></script>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
